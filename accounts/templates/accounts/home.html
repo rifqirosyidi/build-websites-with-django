@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,13 +7,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
 </head>
 <body>
 
 <div class="container">
-    <h1>Your first Template</h1>
+    <h1 class="color-orange">Your first Template</h1>
     <p>Hello There</p>
     <p>You Can Login Here <button class="waves-effect waves-light btn">Login</button></p>
 
