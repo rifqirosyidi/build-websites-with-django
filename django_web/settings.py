@@ -121,3 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Redirect if the user has Successful Lofin, then redirect to /account/ rather than /accounts/profile/ (the default)
+LOGIN_REDIRECT_URL = '/account/'
